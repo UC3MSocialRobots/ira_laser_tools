@@ -19,7 +19,7 @@
 using namespace std;
 using namespace pcl;
 using namespace laserscan_multi_merger;
-
+//
 class LaserscanMerger
 {
 public:

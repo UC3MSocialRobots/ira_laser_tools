@@ -13,7 +13,7 @@
 #include <Eigen/Dense>
 #include <dynamic_reconfigure/server.h>
 #include <ira_laser_tools/laserscan_virtualizerConfig.h>
-
+ 
 typedef pcl::PointCloud<pcl::PointXYZ> myPointCloud;
 
 using namespace std;
