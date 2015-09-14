@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <launch>
-	<arg name="robot" />
 	
 	<node pkg="ira_laser_tools" name="laserscan_multi_merger" type="laserscan_multi_merger" output="screen">
 		<param name="destination_frame" value="/base_link"/>
-		<param name="cloud_destination_topic" value="$(arg robot)/merged_laser_cloud"/>
-		<param name="scan_destination_topic" value="$(arg robot)/scan_total"/>
-        <param name="laserscan_topics" value ="$(arg robot)/scan_filtered $(arg robot)/scan_back $(arg robot)/scan_kinect" />
+		<param name="cloud_destination_topic" value="/maggie/merged_laser_cloud"/>
+		<param name="scan_destination_topic" value="/maggie/scan_total"/>
+        <param name="laserscan_topics" value ="/maggie/scan_filtered /maggie/scan_back /maggie/scan_kinect" />
 	</node>
+	
 </launch>
